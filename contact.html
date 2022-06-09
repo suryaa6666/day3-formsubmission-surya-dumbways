@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+</head>
+
+<body>
+    <nav>
+        <img src="assets/logo.png" alt="Maaf gambar tidak tersedia">
+        <div class="nav-container">
+            <ul class="nav-left">
+                <div class="nav-item">
+                    <li><a href="index.html">Home</a></li>
+                </div>
+                <div class="nav-item">
+                    <li><a href="#">My Project</a></li>
+                </div>
+            </ul>
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1>GET IN TOUCH</h1>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="contact-input" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="contact-input" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" class="contact-input" required>
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" class="contact-input" required>
+                <option value="suryaelidanto@gmail.com" >
+                    Cintara Surya Elidanto
+                </option>
+                <option value="windahbasudara@gmail.com">
+                    Windah Basudara
+                </option>
+                <option value="andylukito@gmail.com">
+                    Andy Lukito
+                </option>
+            </select>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" class="contact-message" rows="5" required></textarea>
+            <div class="contact-submit">
+                <input type="button" onclick="submitData()" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
