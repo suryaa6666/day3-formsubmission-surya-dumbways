@@ -23,8 +23,22 @@
             <div class="nav-right">
                 <a href="contact.html">Contact Me</a>
             </div>
+            <div class="hamburger">
+                <a onclick="openHamburger()"><i class="fa-2x fas fa-bars"></i></a>
+            </div>
         </div>
     </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <div class="hamburger-nav-item">
+            <li><a href="index.html">Home</a></li>
+        </div>
+        <div class="hamburger-nav-item">
+            <li><a href="#">My Project</a></li>
+        </div>
+        <div class="hamburger-nav-item">
+            <li><a href="contact.html">Contact Me</a></li>
+        </div>
+    </div>
     <div class="w-container">
         <div class="c-container">
             <h1> Hi Guys 😃 </h1>
@@ -42,12 +56,12 @@
             <div class="flex-container">
                 <a href="contact.html" class="contact-btn">
                     <p>
-                        contact
+                        Contact
                     </p>
                 </a>
                 <p class="cv">
-                    Download CV <a href="assets/CV_Cintara Surya Elidanto.pdf" class="cv-btn">
-                        <i class="fa-solid fa-download"></i></a>
+                    <a href="assets/CV_Cintara Surya Elidanto.pdf" class="cv-btn" target="_blank">
+                        Download CV <i class="fa-solid fa-download"></i></a>
                 </p>
             </div>
             <div class="medsos">
@@ -73,7 +87,6 @@
                 </div>
             </div>
         </div>
-
         <div class="card">
             <img src="assets/profile.jpg" alt="Maaf, gambar tidak tersedia">
             <div class="card-desc">
@@ -81,9 +94,9 @@
                 <p> Fulltime Spy Agent </p>
             </div>
         </div>
-
     </div>
 
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/595039b2d5.js" crossorigin="anonymous"></script>
 </body>
 

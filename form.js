@@ -23,5 +23,4 @@ const submitData = () => {
     } else {
         a.click();
     }
-
 }

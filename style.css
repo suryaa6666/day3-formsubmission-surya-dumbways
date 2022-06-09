@@ -72,8 +72,20 @@ nav .nav-right a {
     text-decoration: none;
     padding: 15px;
     margin-right: 50px;
+    font-weight: bold;
 }
 
+nav .nav-right a:hover {
+    animation-name: contact;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+nav .nav-right a:not(:hover) {
+    animation-name: contact-reverse;
+    animation-duration: 0.2s;
+    animation-fill-mode: backwards
+}
 
 .w-container {
     background-color: #FFF;
@@ -93,6 +105,18 @@ nav .nav-right a {
     margin-right: 30px;
 }
 
+.contact-btn:hover {
+    animation-name: contact;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.contact-btn:not(:hover) {
+    animation-name: contact-reverse;
+    animation-duration: 0.2s;
+    animation-fill-mode: backwards
+}
+
 .contact-btn p {
     display: flex;
     align-items: center;
@@ -102,6 +126,10 @@ nav .nav-right a {
 .cv-btn {
     text-decoration: none;
     color: inherit;
+}
+
+.cv-btn:hover {
+    font-weight: bold;
 }
 
 .cv {
@@ -134,7 +162,15 @@ nav .nav-right a {
 }
 
 .medsos-item a:hover {
-    color: #FFD24C;
+    animation-name: medsos;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.medsos-item:not(:hover) {
+    animation-name: medsos-reverse;
+    animation-duration: 0.2s;
+    animation-fill-mode: backwards;
 }
 
 .card {
@@ -178,6 +214,77 @@ nav .nav-right a {
     flex: 0.5;
 }
 
+.hamburger {
+    display: none;
+}
+
+.hamburger a {
+    color: #000;
+}
+
+.hamburger-nav-container {
+    font-size: 23px;
+    list-style-type: none;
+    display: none;
+}
+
+.hamburger-nav-container div a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #101726;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.hamburger-nav-container div a:hover {
+    font-weight: bold;
+}
+
+@keyframes contact {
+    from {
+        background-color: #101726;
+    }
+
+    to {
+        background-color: #00A589;
+    }
+}
+
+@keyframes contact-reverse {
+    from {
+        background-color: #00A589;
+    }
+
+    to {
+        background-color: #101726;
+    }
+}
+
+@keyframes medsos {
+    from {
+        color: #101726;
+    }
+
+    to {
+        color: #00A589;
+    }
+}
+
+@keyframes medsos-reverse {
+    from {
+        color: #101726;
+    }
+
+    to {
+        color: #00A589;
+    }
+}
+
+
+
 @media only screen and (max-width: 1220px) {
     .flex-container {
         display: flex;
@@ -209,10 +316,37 @@ nav .nav-right a {
     }
 }
 
+@media only screen and (max-width: 720px) {
+    nav .nav-item {
+        display: none;
+    }
+
+    nav img {
+        height: 7vh;
+    }
+
+    .hamburger {
+        flex: 1;
+        display: flex;
+        margin-right: 30px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav .nav-right {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    nav {
+        position: relative;
+    }
+
     .w-container {
         width: 100%;
         margin: 0;
+        box-shadow: -2px 5px 20px rgba(0, 0, 0, 0);
     }
 
     .c-container {

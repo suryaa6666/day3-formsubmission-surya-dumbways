@@ -24,9 +24,22 @@
             <div class="nav-right">
                 <a href="contact.html">Contact Me</a>
             </div>
+            <div class="hamburger">
+                <a onclick="openHamburger()"><i class="fa-2x fas fa-bars"></i></a>
+            </div>
         </div>
     </nav>
-
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <div class="hamburger-nav-item">
+            <li><a href="index.html">Home</a></li>
+        </div>
+        <div class="hamburger-nav-item">
+            <li><a href="#">My Project</a></li>
+        </div>
+        <div class="hamburger-nav-item">
+            <li><a href="contact.html">Contact Me</a></li>
+        </div>
+    </div>
     <div class="contact-container">
         <h1>GET IN TOUCH</h1>
         <form action="">
@@ -59,8 +72,9 @@
         </form>
     </div>
 
-    <script src="form.js"></script>
     <!-- For testing purposes, press ctrl+alt+p to use it -->
+    <script src="form.js"></script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
     <script type="text/javascript">
         hotkeys('ctrl+alt+p', function (event, handler) {
@@ -73,7 +87,7 @@
             }
         });
     </script>
-
+    <script src="https://kit.fontawesome.com/595039b2d5.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
