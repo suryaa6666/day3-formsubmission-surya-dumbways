@@ -56,3 +56,9 @@
 .contact-container form select {
     padding: 5px;
 }
+
+@media only screen and (max-width: 1250px) {
+    .contact-container {
+        padding: 50px 100px;
+    }
+}

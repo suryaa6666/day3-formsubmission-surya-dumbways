@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
     <title>CONTACT</title>
@@ -38,14 +38,17 @@
             <input type="tel" name="phone" id="phone" class="contact-input" required>
             <label for="subject">Subject</label>
             <select name="subject" id="subject" class="contact-input" required>
-                <option value="suryaelidanto@gmail.com" >
-                    Cintara Surya Elidanto
+                <option value="">
+                    Select...
                 </option>
-                <option value="windahbasudara@gmail.com">
-                    Windah Basudara
+                <option value="Frontend">
+                    Frontend
                 </option>
-                <option value="andylukito@gmail.com">
-                    Andy Lukito
+                <option value="Backend">
+                    Backend
+                </option>
+                <option value="Fullstack">
+                    Fullstack
                 </option>
             </select>
             <label for="message">Your Message</label>
@@ -57,6 +60,20 @@
     </div>
 
     <script src="form.js"></script>
+    <!-- For testing purposes, press ctrl+alt+p to use it -->
+    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+    <script type="text/javascript">
+        hotkeys('ctrl+alt+p', function (event, handler) {
+            if (handler.key == "ctrl+alt+p") {
+                document.getElementById("name").value = "John Doe";
+                document.getElementById("email").value = "testing@gmail.com";
+                document.getElementById("phone").value = "08123456789";
+                document.getElementById("subject").value = "Fullstack";
+                document.getElementById("message").value = "Testing Text Area";
+            }
+        });
+    </script>
+
 </body>
 
 </html>
